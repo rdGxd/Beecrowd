@@ -1,23 +1,16 @@
+/*
+Leia 2 valores inteiros e armazene-os nas variáveis A e B. Efetue a soma de A e B atribuindo o seu resultado na variável X. Imprima X conforme exemplo apresentado abaixo. Não apresente mensagem alguma além daquilo que está sendo especificado e não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
+*/
+
 const rl = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-rl.question("", (A) => {
-  rl.question("", (B) => {
+rl.question("", (primeiroValor) => {
+  rl.question("", (segundoValor) => {
     let X = Number(A) + Number(B);
     console.log(`X = ${X}`);
     rl.close();
   });
 });
-
-
-/*
-const input = require('fs').readFileSync('/dev/stdin', 'utf8');
-const lines = input.split('\n');
-
-const A = Number(lines.shift());
-const B = Number(lines.shift());
-const X = A + B;
-console.log(`X = ${X}`)
-*/

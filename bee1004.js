@@ -1,22 +1,16 @@
+/*
+Leia dois valores inteiros. A seguir, calcule o produto entre estes dois valores e atribua esta operação à variável PROD. A seguir mostre a variável PROD com mensagem correspondente.
+*/
+
 const rl = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-rl.question("", (A) => {
-  rl.question("", (B) => {
-    const prod = Number(A) * Number(B);
+rl.question("", (primeiroValor) => {
+  rl.question("", (segundoValor) => {
+    const prod = Number(primeiroValor) * Number(segundoValor);
     console.log(`PROD = ${prod}`);
     rl.close();
   });
 });
-
-/*
-const input = require('fs').readFileSync('/dev/stdin', 'utf8');
-const lines = input.split('\n');
-
-const A = Number(lines.shift());
-const B = Number(lines.shift());
-const PROD = A * B;
-console.log(`PROD = ${PROD}`)
-*/
