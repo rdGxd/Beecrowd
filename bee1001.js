@@ -9,8 +9,8 @@ const rl = require("readline").createInterface({
 
 rl.question("", (primeiroValor) => {
   rl.question("", (segundoValor) => {
-    let X = Number(A) + Number(B);
-    console.log(`X = ${X}`);
+    const resultado = Number(primeiroValor) + Number(segundoValor);
+    console.log(`X = ${resultado}`);
     rl.close();
   });
 });
